@@ -1,4 +1,4 @@
-
+import { Helmet } from "react-helmet";
 import { useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -10,7 +10,6 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  // Smooth scroll behavior for anchor links
   useEffect(() => {
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -21,11 +20,9 @@ const Index = () => {
           const element = document.getElementById(id);
           if (element) {
             window.scrollTo({
-              top: element.offsetTop - 80, // Adjust for navbar height
+              top: element.offsetTop - 80,
               behavior: 'smooth'
             });
-            
-            // Update URL without scrolling
             history.pushState(null, '', `#${id}`);
           }
         }
@@ -33,7 +30,6 @@ const Index = () => {
     };
 
     document.addEventListener('click', handleAnchorClick);
-    
     return () => {
       document.removeEventListener('click', handleAnchorClick);
     };
@@ -41,6 +37,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+
+      <Helmet>
+        <title>Portfolio - Johary</title>
+        <meta name="description" content="Portfolio de Johary, développeur spécialisé en web et mobile. Découvrez mes projets, compétences et expériences." />
+      </Helmet>
+
       <Navbar />
       <HeroSection />
       <ProjectsSection />

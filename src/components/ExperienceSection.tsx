@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Briefcase, Calendar, GraduationCap } from "lucide-react";
 
@@ -12,53 +11,69 @@ interface ExperienceItem {
 }
 
 const experiences: ExperienceItem[] = [
+  // — Projets —
   {
     type: "work",
-    title: "Développeur Full Stack Senior",
-    organization: "Tech Solutions Inc.",
-    period: "2022 - Présent",
-    description: "Développement d'applications web à grande échelle en utilisant React, Node.js et AWS. Leadership technique d'une équipe de 5 développeurs.",
-    technologies: ["React", "Node.js", "AWS", "PostgreSQL", "Docker"]
+    title: "Framework Java Web MVC - AsaSprint",
+    organization: "Projet personnel",
+    period: "2023 - 2025",
+    description:
+      "Développement d'un framework Java Web MVC personnalisé avec gestion des rôles, validation et routage pour accélérer la création d'applications d'entreprise.",
+    technologies: ["Java"],
   },
   {
     type: "work",
-    title: "Développeur Mobile",
-    organization: "MobileApp Studio",
-    period: "2020 - 2022",
-    description: "Conception et développement d'applications mobiles natives et cross-platform pour iOS et Android.",
-    technologies: ["React Native", "Swift", "Kotlin", "Firebase", "Redux"]
+    title: "Site de gestion des ressources humaines",
+    organization: "ITUniversity",
+    period: "2024",
+    description:
+      "Développement d'une application web pour gérer les employés, les congés et les absences, avec rôles et validation intégrés.",
+    technologies: ["Java", "Spring Boot", "PostgreSQL"],
   },
   {
     type: "work",
-    title: "Développeur Frontend",
-    organization: "Digital Agency",
-    period: "2018 - 2020",
-    description: "Implémentation d'interfaces utilisateur modernes et réactives pour divers clients.",
-    technologies: ["Vue.js", "JavaScript", "SCSS", "Webpack", "REST API"]
+    title: "Plateforme de cryptomonnaie",
+    organization: "Projet en Groupe (4 personnes)",
+    period: "Janvier 2025",
+    description:
+      "Développement d'une plateforme web et mobile pour le suivi des cours de crypto, gestion des utilisateurs, dépôts et retraits.",
+    technologies: ["Symphony","Spring-boot","Postgres","React", "React Ionic", "Firebase", "Docker"],
+  },
+
+  // — Formations & Certifications —
+  {
+    type: "education",
+    title: "Licence 3 Informatique - Développement",
+    organization: "ITUniversity",
+    period: "2022 - 2025 (en cours)",
+    description:
+      "Spécialisation en développement logiciel, architecture web, bases de données et cloud computing.",
   },
   {
     type: "education",
-    title: "Master en Développement Web",
-    organization: "Université de Technologie",
-    period: "2016 - 2018",
-    description: "Spécialisation en développement web avancé et architecture logicielle.",
+    title: "Gen AI Skills Certificate (Google Skill Boost Cloud)",
+    organization: "Google",
+    period: "Février 2025 (en cours)",
+    description:
+      "Formation en intelligence artificielle générative appliquée aux technologies cloud.",
   },
   {
     type: "education",
-    title: "Licence en Informatique",
-    organization: "École Polytechnique",
-    period: "2013 - 2016",
-    description: "Formation en algorithmique, structures de données et développement logiciel.",
-  }
+    title: "Baccalauréat série D",
+    organization: "Lycée Manjary Soa Alasora",
+    period: "2022",
+    description:
+      "Obtention du baccalauréat scientifique série D .",
+  },
 ];
 
-const TimelineItem: React.FC<{ item: ExperienceItem, index: number }> = ({ item, index }) => {
+const TimelineItem: React.FC<{ item: ExperienceItem; index: number }> = ({ item, index }) => {
   const animationDelay = `${0.1 * index}s`;
-  
+
   return (
     <div className="timeline-item animate-fade-in" style={{ animationDelay }}>
       <div className="timeline-dot" />
-      
+
       <div className="ml-2">
         <div className="flex items-center text-sm text-foreground/60 mb-2">
           <span className="flex items-center">
@@ -67,7 +82,7 @@ const TimelineItem: React.FC<{ item: ExperienceItem, index: number }> = ({ item,
             ) : (
               <GraduationCap className="h-4 w-4 mr-1 text-portfolio-secondary" />
             )}
-            {item.type === "work" ? "Expérience" : "Formation"}
+            {item.type === "work" ? "Projet" : "Formation"}
           </span>
           <span className="mx-2">•</span>
           <span className="flex items-center">
@@ -75,11 +90,11 @@ const TimelineItem: React.FC<{ item: ExperienceItem, index: number }> = ({ item,
             {item.period}
           </span>
         </div>
-        
+
         <h3 className="text-xl font-bold">{item.title}</h3>
         <p className="text-lg text-foreground/80 mb-2">{item.organization}</p>
         <p className="mb-3 text-foreground/70">{item.description}</p>
-        
+
         {item.technologies && (
           <div className="flex flex-wrap gap-2">
             {item.technologies.map((tech) => (
@@ -97,20 +112,17 @@ const TimelineItem: React.FC<{ item: ExperienceItem, index: number }> = ({ item,
   );
 };
 
-const ExperienceSection: React.FC = () => {
-  return (
-    <section id="experience" className="section">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title">Parcours</h2>
-        
-        <div className="mt-12 max-w-3xl mx-auto">
-          {experiences.map((item, index) => (
-            <TimelineItem key={index} item={item} index={index} />
-          ))}
-        </div>
+const ExperienceSection: React.FC = () => (
+  <section id="experience" className="section">
+    <div className="container mx-auto px-4">
+      <h2 className="section-title">Parcours & Formations</h2>
+      <div className="mt-12 max-w-3xl mx-auto">
+        {experiences.map((item, index) => (
+          <TimelineItem key={index} item={item} index={index} />
+        ))}
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default ExperienceSection;

@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const Footer = () => {
@@ -9,17 +8,19 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <div className="flex items-center space-x-2 mb-3">
               <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-portfolio-primary to-portfolio-secondary" />
-              <span className="text-xl font-display font-bold">Dev<span className="text-portfolio-primary">Folio</span></span>
+              <span className="text-xl font-display font-bold">
+                Dev<span className="text-portfolio-primary">Folio</span>
+              </span>
             </div>
             <p className="text-foreground/70 max-w-md">
-              Développeur web et mobile passionné par la création d'applications modernes et performantes.
+              Développeur web et mobile passionné par la création d'applications modernes, performantes et sur mesure.
             </p>
           </div>
 
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://github.com/jdupont"
+                href="https://github.com/JoharyManantena" // <- Remplacer par ton vrai lien GitHub
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-foreground/5 hover:bg-foreground/10 text-foreground/80 hover:text-foreground transition-colors"
@@ -27,7 +28,7 @@ const Footer = () => {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in/jean-dupont"
+                href="https://www.linkedin.com/in/johary-andrianjafinoro-9091a3271" // <- Remplacer par ton vrai lien LinkedIn
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-foreground/5 hover:bg-foreground/10 text-foreground/80 hover:text-foreground transition-colors"
@@ -35,7 +36,7 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a
-                href="mailto:contact@jeandupont.dev"
+                href="mailto:JoharyManantena27@gmail.com" // <- Remplacer par ton email
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-foreground/5 hover:bg-foreground/10 text-foreground/80 hover:text-foreground transition-colors"
@@ -43,7 +44,7 @@ const Footer = () => {
                 <Mail size={18} />
               </a>
               <a
-                href="https://instagram.com/jdupont.dev"
+                href="https://www.instagram.com/johary_manantena/.dev" // <- Remplacer par ton Instagram si tu veux
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-10 w-10 flex items-center justify-center rounded-full bg-foreground/5 hover:bg-foreground/10 text-foreground/80 hover:text-foreground transition-colors"
@@ -52,7 +53,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-foreground/60">
-              © {new Date().getFullYear()} Jean Dupont. Tous droits réservés.
+              © {new Date().getFullYear()} Johary Manantena . Tous droits réservés.
             </p>
           </div>
         </div>

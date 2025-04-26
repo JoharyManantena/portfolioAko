@@ -1,4 +1,3 @@
-
 import React, { Suspense } from "react";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,25 +21,37 @@ const HeroSection: React.FC = () => {
           <p className="text-portfolio-primary font-medium mb-2 animate-fade-in">
             Bonjour, je suis
           </p>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Jean Dupont
+
+          <h1
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Johary Manantena
           </h1>
-          
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground/80 mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+
+          <h2
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground/80 mb-6 animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
             Développeur <span className="gradient-text">Web & Mobile</span>
           </h2>
-          
-          <p className="text-lg text-foreground/70 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            Je crée des expériences web et mobiles attrayantes, en utilisant les technologies modernes
-            pour construire des produits accessibles et performants.
+
+          <p
+            className="text-lg text-foreground/70 mb-8 max-w-2xl animate-fade-in"
+            style={{ animationDelay: "0.3s" }}
+          >
+            Développeur passionné spécialisé dans la création d'applications web et mobiles modernes,
+            avec expertise en Java, Spring Boot, React, Firebase, et bases de données PostgreSQL.
           </p>
-          
-          <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+
+          <div
+            className="flex flex-wrap gap-4 animate-fade-in"
+            style={{ animationDelay: "0.4s" }}
+          >
             <Button asChild className="bg-portfolio-primary hover:bg-portfolio-secondary transition-colors">
               <a href="#projects">Voir mes projets</a>
             </Button>
-            
+
             <Button asChild variant="outline">
               <a href="#contact">Me contacter</a>
             </Button>

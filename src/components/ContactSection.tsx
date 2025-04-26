@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Mail, Phone, Linkedin, Github, Instagram, Globe, Send } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Instagram, Facebook, Globe, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -17,38 +17,38 @@ const contactInfo: ContactInfoProps[] = [
   {
     icon: <Mail />,
     label: "Email",
-    value: "contact@jeandupont.dev",
-    href: "mailto:contact@jeandupont.dev"
+    value: "JoharyManantena27@gmail.com",
+    href: "mailto:JoharyManantena27@gmail.com"
   },
   {
     icon: <Phone />,
     label: "Téléphone",
-    value: "+33 6 12 34 56 78",
-    href: "tel:+33612345678"
+    value: "+261 38 46 09 025",
+    href: "tel:+261384609025"
   },
   {
     icon: <Linkedin />,
     label: "LinkedIn",
-    value: "jean-dupont",
-    href: "https://linkedin.com/in/jean-dupont"
+    value: "andrianjafinoro-johary-manantena",
+    href: "https://www.linkedin.com/in/johary-andrianjafinoro-9091a3271"
   },
   {
     icon: <Github />,
     label: "GitHub",
-    value: "@jdupont",
-    href: "https://github.com/jdupont"
+    value: "@JoharyManantena",
+    href: "https://github.com/JoharyManantena"
   },
   {
     icon: <Instagram />,
     label: "Instagram",
-    value: "@jdupont.dev",
-    href: "https://instagram.com/jdupont.dev"
+    value: "@johary.dev",
+    href: "https://www.instagram.com/johary_manantena/.dev"
   },
   {
-    icon: <Globe />,
-    label: "Site Web",
-    value: "jeandupont.dev",
-    href: "https://jeandupont.dev"
+    icon: <Facebook />,
+    label: "Facebook",
+    value: "andrianjafinoro.dev",
+    href: "https://www.facebook.com/JoharyManantena.dev"
   }
 ];
 

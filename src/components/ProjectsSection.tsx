@@ -1,7 +1,6 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, ExternalLink, Code } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 interface ProjectProps {
@@ -15,36 +14,31 @@ interface ProjectProps {
 
 const projects: ProjectProps[] = [
   {
-    title: "E-commerce Platform",
-    description: "Plateforme e-commerce complète avec panier d'achat, système de paiement et gestion de produits en React et Node.js.",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    tags: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "Framework Java Web MVC - AsaSprint",
+    description:
+      "Développement d'un framework Java Web MVC personnalisé avec gestion des rôles, validation et routage pour accélérer la création d'applications d'entreprise.",
+    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c", // Image dev Java
+    tags: ["Java"],
+    githubUrl: "https://github.com/JoharyManantena/ASASprint",
+    // liveUrl: "#",
   },
   {
-    title: "Application Mobile de Fitness",
-    description: "Application mobile de suivi d'entraînement et de nutrition développée avec React Native et Firebase.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    tags: ["React Native", "Firebase", "Redux", "Expo", "GraphQL"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "Site de gestion des ressources humaines",
+    description:
+      "Développement d'une application web pour gérer les employés, les congés et les absences, avec rôles et validation intégrés.",
+    image: "https://img.freepik.com/vecteurs-libre/gestionnaires-ressources-humaines-faisant-recherches-personnel-professionnel-loupe-ressources-humaines-travail-equipe-rh-illustration-concept-service-chasseur-tetes_335657-2061.jpg?semt=ais_hybrid&w=740", // Image RH/web app
+    tags: ["Java", "Spring Boot", "PostgreSQL"],
+    githubUrl: "https://github.com/JoharyManantena/RH-CODE",
+    // liveUrl: "#",
   },
   {
-    title: "Dashboard Analytics",
-    description: "Tableau de bord interactif pour visualiser les données d'entreprise avec des graphiques dynamiques.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-    tags: ["Vue.js", "D3.js", "TypeScript", "Firebase", "Tailwind"],
-    githubUrl: "#",
-    liveUrl: "#"
-  },
-  {
-    title: "Portfolio Personnel",
-    description: "Site portfolio moderne avec animations 3D et conception UI/UX responsive.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    tags: ["React", "Three.js", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "#",
-    liveUrl: "#"
+    title: "Plateforme de cryptomonnaie (web & mobile)",
+    description:
+      "Développement d'une plateforme web et mobile pour le suivi des cours de crypto, la gestion des utilisateurs, les dépôts et retraits.",
+    image: "https://www.01net.com/app/uploads/2022/06/Meilleure-plateforme-crypto-monnaies.jpg", // Image crypto / mobile
+    tags: ["Symphony", "Spring Boot", "PostgreSQL", "React", "Ionic", "Firebase", "Docker"],
+    githubUrl: "https://github.com/Toavina002401/Projet-Cloud-S5",
+    // liveUrl: "#",
   },
 ];
 
@@ -66,12 +60,12 @@ const ProjectCard: React.FC<ProjectProps> = ({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
-        
+
         <p className="text-foreground/70 mb-4">{description}</p>
-        
+
         <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary">
@@ -79,7 +73,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
             </Badge>
           ))}
         </div>
-        
+
         <div className="flex gap-3">
           {githubUrl && (
             <Button asChild variant="outline" size="sm">
@@ -89,7 +83,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
               </a>
             </Button>
           )}
-          
+
           {liveUrl && (
             <Button asChild size="sm" className="bg-portfolio-primary hover:bg-portfolio-secondary">
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
@@ -115,13 +109,13 @@ const ProjectsSection: React.FC = () => {
     <section id="projects" className="section">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Mes Projets</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
           {projects.slice(0, visibleProjects).map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
-        
+
         {visibleProjects < projects.length && (
           <div className="flex justify-center">
             <Button

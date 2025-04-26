@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Code, Smartphone, Globe, Server, Database, Search } from "lucide-react";
 
@@ -10,35 +9,35 @@ interface SkillCategoryProps {
 
 const skillCategories: SkillCategoryProps[] = [
   {
+    title: "Langages",
+    icon: <Code className="h-6 w-6 text-portfolio-primary" />,
+    skills: ["C", "C#", "Java", "PHP", "JavaScript", "HTML", "SQL"],
+  },
+  {
     title: "Frontend",
     icon: <Globe className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["React", "Vue.js", "Angular", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "SASS", "Redux", "Next.js"]
+    skills: ["Vue.js", "React", "React Native", "Bootstrap", "CSS", "Sass"],
   },
   {
     title: "Backend",
     icon: <Server className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Node.js", "Express", "NestJS", "PHP", "Laravel", "Python", "Django", "REST API", "GraphQL"]
+    skills: ["Node.js", "Spring", "Symphony", ".NET"],
   },
   {
     title: "Mobile",
     icon: <Smartphone className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["React Native", "Flutter", "iOS (Swift)", "Android (Kotlin)", "Expo", "Mobile UI Design", "App Store Deployment"]
+    skills: ["React Native" , "Ionic"],
   },
   {
     title: "Database",
     icon: <Database className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Elasticsearch", "ORM (Prisma, Sequelize)"]
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "Oracle", "SQL Server"],
   },
   {
-    title: "DevOps & Tools",
-    icon: <Code className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Git", "Docker", "CI/CD", "AWS", "Heroku", "Netlify", "Vercel", "Linux", "Testing (Jest, Cypress)"]
-  },
-  {
-    title: "UX/UI Design",
+    title: "DevOps & Outils",
     icon: <Search className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Figma", "Adobe XD", "Sketch", "Responsive Design", "Prototyping", "UI Animation", "Usability Testing"]
-  }
+    skills: ["Docker", "Git", "GitHub", "Firebase", "Postman", "Swagger" , "Figma"],
+  },
 ];
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) => {
@@ -67,7 +66,7 @@ const SkillsSection: React.FC = () => {
     <section id="skills" className="section bg-muted/30">
       <div className="container mx-auto px-4">
         <h2 className="section-title">Mes Compétences</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category) => (
             <SkillCategory 

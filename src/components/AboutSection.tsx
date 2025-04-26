@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Award, Heart, Music, Book, Code, Tv } from "lucide-react";
+import { Award, Trophy , Film, Plane, Gamepad } from "lucide-react";
 
 interface HobbyProps {
   icon: React.ReactNode;
@@ -9,24 +8,24 @@ interface HobbyProps {
 
 const hobbies: HobbyProps[] = [
   {
-    icon: <Music className="h-5 w-5" />,
-    label: "Musique"
+    icon: <Trophy  className="h-5 w-5" />,
+    label: "Tennis"
   },
   {
-    icon: <Book className="h-5 w-5" />,
-    label: "Lecture"
+    icon: <Trophy  className="h-5 w-5" />,
+    label: "Basket"
   },
   {
-    icon: <Tv className="h-5 w-5" />,
+    icon: <Film className="h-5 w-5" />,
     label: "Cinéma"
   },
   {
-    icon: <Heart className="h-5 w-5" />,
+    icon: <Plane className="h-5 w-5" />,
     label: "Voyages"
   },
   {
-    icon: <Code className="h-5 w-5" />,
-    label: "Open Source"
+    icon: <Gamepad className="h-5 w-5" />,
+    label: "Jeux vidéo"
   }
 ];
 
@@ -88,9 +87,9 @@ const AboutSection: React.FC = () => {
             <div>
               <h4 className="text-lg font-semibold mb-3">Langues</h4>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Français (Natif)</span>
+                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Malagasy (Natif)</span>
                 <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Anglais (Professionnel)</span>
-                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Espagnol (Intermédiaire)</span>
+                <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">Francais (Intermédiaire)</span>
               </div>
             </div>
           </div>

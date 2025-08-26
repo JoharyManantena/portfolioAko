@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-emerald-500 to-emerald-600" />
-            <span className="text-xl font-display font-bold">Dev<span className="text-emerald-500">Folio</span></span>
+            <span className="text-xl font-display font-bold">My<span className="text-emerald-500">Folio</span></span>
           </div>
 
           {/* Desktop Navigation */}

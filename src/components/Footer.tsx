@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-3">
               <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-portfolio-primary to-portfolio-secondary" />
               <span className="text-xl font-display font-bold">
-                Dev<span className="text-portfolio-primary">Folio</span>
+                My<span className="text-portfolio-primary">Folio</span>
               </span>
             </div>
             <p className="text-foreground/70 max-w-md">

@@ -63,7 +63,7 @@ const AboutSection: React.FC = () => {
               Étudiant en 3ᵉ année de Licence Informatique à ITUniversity, passionné par le développement web, la création d'applications et les nouvelles technologies.
             </p>
             <p className="text-foreground/80 mb-6">
-              Sérieux, curieux et motivé, je développe des projets web et mobile en Java, React, Node.js, Spring Boot, et utilise des bases de données comme PostgreSQL et Firebase.
+              Sérieux, curieux et motivé, je développe des projets web et mobile en toute flexibilité. Je maîtrise plusieurs langages de programmation POO ce qui me permet de m'adapter rapidement à différents environnements et technologies.
             </p>
             
             <div className="mb-8">

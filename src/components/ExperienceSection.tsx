@@ -11,43 +11,15 @@ interface ExperienceItem {
 }
 
 const experiences: ExperienceItem[] = [
-  // — Projets —
-  {
-    type: "work",
-    title: "Framework Java Web MVC - AsaSprint",
-    organization: "Projet personnel",
-    period: "2023 - 2025",
-    description:
-      "Développement d'un framework Java Web MVC personnalisé avec gestion des rôles, validation et routage pour accélérer la création d'applications d'entreprise.",
-    technologies: ["Java"],
-  },
-  {
-    type: "work",
-    title: "Site de gestion des ressources humaines",
-    organization: "ITUniversity",
-    period: "2024",
-    description:
-      "Développement d'une application web pour gérer les employés, les congés et les absences, avec rôles et validation intégrés.",
-    technologies: ["Java", "Spring Boot", "PostgreSQL"],
-  },
-  {
-    type: "work",
-    title: "Plateforme de cryptomonnaie",
-    organization: "Projet en Groupe (4 personnes)",
-    period: "Janvier 2025",
-    description:
-      "Développement d'une plateforme web et mobile pour le suivi des cours de crypto, gestion des utilisateurs, dépôts et retraits.",
-    technologies: ["Symphony","Spring-boot","Postgres","React", "React Ionic", "Firebase", "Docker"],
-  },
 
   // — Formations & Certifications —
   {
     type: "education",
-    title: "Licence 3 Informatique - Développement",
-    organization: "ITUniversity",
+    title: "Licence 3 Informatique - Développement Web",
+    organization: "IT-University",
     period: "2022 - 2025 (en cours)",
     description:
-      "Spécialisation en développement logiciel, architecture web, bases de données et cloud computing.",
+      "Spécialisation en développement logiciel, architecture web, bases de données .",
   },
   {
     type: "education",

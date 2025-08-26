@@ -11,34 +11,73 @@ const skillCategories: SkillCategoryProps[] = [
   {
     title: "Langages",
     icon: <Code className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["C", "C#", "Java", "PHP", "JavaScript", "HTML", "SQL"],
+    skills: [
+      "C",
+      "C#",
+      "C++",
+      "Java",
+      "PHP",
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "Python",
+    ],
   },
   {
     title: "Frontend",
     icon: <Globe className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Vue.js", "React", "React Native", "Bootstrap", "CSS", "Sass"],
+    skills: [
+      "Vue.js",
+      "React",
+      "React Native",
+      "Ionic",
+      "Bootstrap"
+    ],
   },
   {
     title: "Backend",
     icon: <Server className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Node.js", "Spring", "Symphony", ".NET"],
+    skills: [
+      "Node.js",
+      "Spring",
+      "Spring Boot",
+      "Symphony",
+      ".NET",
+      "ASP.NET",
+      "Servlet",
+      "Frappe",
+    ],
   },
   {
     title: "Mobile",
     icon: <Smartphone className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["React Native" , "Ionic"],
+    skills: ["React Native", "Ionic"],
   },
   {
     title: "Database",
     icon: <Database className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["MongoDB", "MySQL", "PostgreSQL", "Oracle", "SQL Server"],
+    skills: ["MongoDB", "MySQL", "PostgreSQL", "Oracle", "MariaDB", "SQL Server"],
+  },
+  {
+    title: "Data Science & Analyse",
+    icon: <Search className="h-6 w-6 text-portfolio-primary" />,
+    skills: ["Pandas", "NumPy", "Matplotlib"],
   },
   {
     title: "DevOps & Outils",
     icon: <Search className="h-6 w-6 text-portfolio-primary" />,
-    skills: ["Docker", "Git", "GitHub", "Firebase", "Postman", "Swagger" , "Figma"],
+    skills: [
+      "Docker",
+      "Git",
+      "GitHub",
+      "Firebase",
+      "Postman",
+      "Swagger",
+      "Figma",
+    ],
   },
 ];
+
 
 const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) => {
   return (

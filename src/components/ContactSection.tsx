@@ -17,8 +17,8 @@ const contactInfo: ContactInfoProps[] = [
   {
     icon: <Mail />,
     label: "Email",
-    value: "JoharyManantena27@gmail.com",
-    href: "mailto:JoharyManantena27@gmail.com"
+    value: "joharyandrianjafinoro003@gmail.com",
+    href: "mailto:joharyandrianjafinoro003@gmail.com"
   },
   {
     icon: <Phone />,
@@ -30,7 +30,7 @@ const contactInfo: ContactInfoProps[] = [
     icon: <Linkedin />,
     label: "LinkedIn",
     value: "andrianjafinoro-johary-manantena",
-    href: "https://www.linkedin.com/in/johary-andrianjafinoro-9091a3271"
+    href: "www.linkedin.com/in/johary-manantena-andrianjafinoro-9091a3271"
   },
   {
     icon: <Github />,
@@ -41,14 +41,14 @@ const contactInfo: ContactInfoProps[] = [
   {
     icon: <Instagram />,
     label: "Instagram",
-    value: "@johary.dev",
-    href: "https://www.instagram.com/johary_manantena/.dev"
+    value: "@johary_manantena.dev",
+    href: "https://www.instagram.com/johary_manantena"
   },
   {
     icon: <Facebook />,
     label: "Facebook",
     value: "andrianjafinoro.dev",
-    href: "https://www.facebook.com/JoharyManantena.dev"
+    href: "https://www.facebook.com/JoharyManantena"
   }
 ];
 
